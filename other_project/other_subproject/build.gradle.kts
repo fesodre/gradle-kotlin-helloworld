@@ -16,11 +16,10 @@ repositories {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3:3.0")
+    implementation("org.apache.commons:commons-lang3:3.1")
     // Further examples showing string concatenation
     val group = "org.jetbrains.kotlin"
     val artifact = "kotlin-reflect"
     val version = kotlinVersion
     implementation("$group:$artifact:$version")
-    implementation("com.konghq:unirest-java:3.13.12")
 }

@@ -16,10 +16,3 @@ repositories {
 dependencies {
     implementation("org.apache.commons:commons-lang3:3.0")
 }
-
-fun printProjectFiles(project: Project) {
-    println("project_path|${project.getPath()}|${project.buildFile}")
-}
-
-printProjectFiles(rootProject)
-rootProject.subprojects.forEach { sub -> printProjectFiles(sub) }
